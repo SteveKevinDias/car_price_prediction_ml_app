@@ -31,7 +31,7 @@ def preprocess_and_predict(name, company, year, kms_driven, fuel_type, pipe):
     return pipe.predict(data)
 
 def main():
-    st.title("Quikr Car Price Predictor")
+    st.title("Car Price Predictor")
 
     name = st.selectbox("Car Name", ['Audi A3 Cabriolet', 'Audi A4 1.8', 'Audi A4 2.0', 'Audi A6 2.0',
        'Audi A8', 'Audi Q3 2.0', 'Audi Q5 2.0', 'Audi Q7', 'BMW 3 Series',
