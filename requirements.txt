@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+pickle
+psycopg2
+os
