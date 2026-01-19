@@ -8,7 +8,7 @@ from psycopg2.extras import RealDictCursor
 
 
 
-db_url = os.getenv(st.secrets["NEON_URL"])
+db_url = st.secrets["NEON_URL"]
 
 def get_connection_url():
 
