@@ -134,7 +134,7 @@ def main():
     if st.button("Predict Price"):
         pipe = load_model()
         predicted_price = preprocess_and_predict(name, company, year, kms_driven, fuel_type, pipe)
-        price = float(predicted_price)
+        price = float(predicted_price[0])
         st.success(f"The predicted price of the car is: ₹{price:.2f}")
         conn = get_connection_url()
         cursor = conn.cursor()
